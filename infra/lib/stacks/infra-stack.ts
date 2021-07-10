@@ -29,7 +29,7 @@ export class InfraStack extends cdk.Stack {
         APP_NAME: appConfig.appName,
         ENV_NAME: appConfig.envName,
         PROFILE_NAME: appConfig.profileName,
-        AWS_APPCONFIG_EXTENSION_PREFETCH_LIST: `/applications/${appConfig.appName}/environments/${appConfig.envName}/configurations/${appConfig.profileName}.`,
+        AWS_APPCONFIG_EXTENSION_PREFETCH_LIST: `/applications/${appConfig.appName}/environments/${appConfig.envName}/configurations/${appConfig.profileName}`,
       },
     });
     fn.addToRolePolicy(new iam.PolicyStatement({
